@@ -10,161 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(3, 33, 37);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70px;
-        background-color: rgb(27, 89, 100);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(53, 255, 53);
-        font-size: 1.03rem;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 25px;
-      }
-      .left {
-        font-size: 1.4rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 60px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-      .leftSection {
-        font-size: 2rem;
-      }
-      .leftSection .buttons {
-        padding-top: 20px;
-      }
-      .btn {
-        background-color: rgb(92, 92, 231);
-        color: white;
-        padding: 10px;
-        border: 1px solid rgb(30, 30, 158);
-        border-radius: 5px;
-      }
-      .btn:hover {
-        background-color: rgb(41, 41, 141);
-        cursor: pointer;
-      }
-      .buttons a {
-        text-decoration: none;
-      }
-      .purple {
-        color: rgb(171, 82, 255);
-      }
-      .text-gray {
-        color: gray;
-      }
-      .rightSection img {
-        width: 80%;
-      }
-      #element {
-        color: rgb(171, 82, 255);
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-      main hr {
-        border: 0;
-        background: rgb(151, 151, 240);
-        height: 1px;
-        margin: 40px 80px;
-      }
-      .secondSection h1 {
-        font-size: 1.8rem;
-      }
-      .secondSection .box {
-        background: white;
-        width: 73vw;
-        height: 2px;
-        margin: 56px 0;
-        display: flex;
-      }
-      .secondSection .vertical {
-        height: 93px;
-        width: 1px;
-        background: white;
-        margin: 0 120px;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-      .image-top {
-        width: 30px;
-        position: relative;
-        top: -32px;
-        left: -9px;
-      }
-      .vertical-title {
-        position: relative;
-        top: 75px;
-        width: 150px;
-        font-size: 18px;
-      }
-      .vertical-desc {
-        position: relative;
-        top: 90px;
-        width: 180px;
-        color: grey;
-        font-size: 13px;
-      }
-      footer {
-        background-color: rgb(24, 24, 37);
-      }
-      .footer {
-        display: flex;
-        padding: 25px 100px 0;
-        justify-content: space-evenly;
-      }
-      .footer > div {
-        width: 180px;
-        display: flex;
-      }
-      .footer img {
-        width: 25px;
-      }
-      .footer a {
-        display: flex;
-        text-decoration: none;
-        color: white;
-        height: 21px;
-      }
-      .footer ul {
-        list-style: none;
-      }
-      footer .text {
-        color: grey;
-        text-align: center;
-        padding: 10px 0;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -184,16 +30,16 @@
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi, My name is <span class="purple">Vaibhav</span>
+          <div>Hi, My name is <span class="purple">Vaibhav</span></div>
           <div>and i am a passionate</div>
           <span id="element"></span>
           <div class="buttons">
-            <a href="/"><button class="btn">Download Resume</button></a>
-            <a href="/"><button class="btn">Github</button></a>
+            <a href="/"><button class="btn">Resume</button></a>
+            <a href="https://github.com/Vaibhav464"><button class="btn">Github</button></a>
           </div>
         </div>
         <div class="rightSection">
-          <img src="bg.png" alt="" />
+          <img src="img/bg.png" alt="" />
         </div>
       </section>
       <hr />
@@ -201,8 +47,8 @@
         <span class="text-gray">What I have done so far</span>
         <h1>Work Experience</h1>
         <div class="box">
-          <div class="vertical">
-            <img src="bg.png" alt="" class="image-top" />
+          <div class="logo vertical">
+            <img src="img/bg.png" alt="" class="image-top" />
             <div class="vertical-title">HTML Developer (2020-21)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -210,8 +56,8 @@
               voluptatibus aliquam ipsam?
             </div>
           </div>
-          <div class="vertical">
-            <img src="bg.png" alt="" class="image-top" />
+          <div class="logo vertical">
+            <img src="img/bg.png" alt="" class="image-top" />
             <div class="vertical-title">HTML Developer (2021-22)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -219,8 +65,8 @@
               voluptatibus aliquam ipsam?
             </div>
           </div>
-          <div class="vertical">
-            <img src="bg.png" alt="" class="image-top" />
+          <div class="logo vertical">
+            <img src="img/bg.png" alt="" class="image-top" />
             <div class="vertical-title">HTML Developer (2022-23)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -228,8 +74,8 @@
               voluptatibus aliquam ipsam?
             </div>
           </div>
-          <div class="vertical">
-            <img src="bg.png" alt="" class="image-top" />
+          <div class="logo vertical">
+            <img src="img/bg.png" alt="" class="image-top" />
             <div class="vertical-title">HTML Developer (2023-Present)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -240,7 +86,7 @@
         </div>
       </section>
     </main>
-    <div style="height: 200px"></div>
+    <div class="box2" style="height: 200px"></div>
     <footer>
       <div class="footer">
         <div class="footer-first">
@@ -250,7 +96,7 @@
           <ul>
             <li>
               <a href="/"
-                ><div><img src="github.png" alt="github" /></div>
+                ><div><img src="img/github.png" alt="" /></div>
                 Github</a
               >
             </li>
@@ -260,7 +106,7 @@
           <ul>
             <li>
               <a href="/"
-                ><div><img src="twitter.png" alt="twitter" /></div>
+                ><div><img src="img/twitter.png" alt="" /></div>
                 Twitter</a
               >
             </li>
@@ -270,7 +116,7 @@
           <ul>
             <li>
               <a href="/"
-                ><div><img src="linkedIn.png" alt="linkedIn" /></div>
+                ><div><img src="img/linkedIn.png" alt="" /></div>
                 LinkedIn</a
               >
             </li>
@@ -285,21 +131,7 @@
         strings: ["Web Developer", "Graphic Designer", "Video Editor"],
         typeSpeed: 50,
       });
-      window.addEventListener("load", function () {
-        let boxes = document.getElementsByClassName("vertical");
-
-        function showBox(index) {
-          if (index >= boxes.length) {
-            return;
-          }
-          boxes[index].style.opacity = 1;
-          setTimeout(function () {
-            showBox(index + 1);
-          }, 2000);
-        }
-
-        showBox(0);
-      });
     </script>
+    <script defer src="App.js"></script>
   </body>
 </html>
