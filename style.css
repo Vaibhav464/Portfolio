@@ -42,6 +42,22 @@ nav ul li {
 .firstSection > div {
   width: 30%;
 }
+#name {
+  position: relative;
+}
+#name::after{
+  background-color: rgb(56, 209, 201);
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: all 1s;
+  position: absolute;
+  bottom: 0%;
+  left:0;
+}
+#name:hover::after{
+  width: 70%;
+}
 .leftSection {
   font-size: 2rem;
 }
