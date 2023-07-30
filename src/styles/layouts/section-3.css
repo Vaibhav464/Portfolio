@@ -1,0 +1,48 @@
+.thirdSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 125vh;
+}
+.project-container {
+  display: flex;
+  gap: 2rem;
+}
+.img-wrapper {
+  width: 35rem;
+  overflow: hidden;
+  position: relative;
+}
+.app-img {
+  border-radius: 5px;
+  max-width: 100%;
+  transition: all 0.5s ease;
+}
+.app-img:hover {
+  transform: scale(1.05);
+}
+.app-info {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.app-info-container {
+  background-color: rgb(56, 54, 54);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project-title {
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+.project-info-container {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}

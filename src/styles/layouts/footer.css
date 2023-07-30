@@ -1,0 +1,31 @@
+footer {
+  background-color: rgb(24, 24, 37);
+}
+.footer {
+  display: flex;
+  padding: 25px 100px 0;
+  justify-content: space-evenly;
+}
+.footer > div {
+  width: 180px;
+  display: flex;
+}
+.footer img {
+  width: 25px;
+}
+.footer a {
+  display: flex;
+  color: white;
+  height: 21px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer ul {
+  list-style: none;
+}
+footer .text {
+  color: grey;
+  text-align: center;
+  padding: 10px 0;
+}

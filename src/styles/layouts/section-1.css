@@ -1,0 +1,54 @@
+.left {
+  font-size: 1.4rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 0;
+}
+.firstSection > div {
+  width: 30%;
+}
+#name {
+  position: relative;
+}
+#name::after {
+  background-color: aqua;
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: all 1s;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+#name:hover::after {
+  width: 70%;
+}
+.leftSection {
+  font-size: 2rem;
+}
+.leftSection .buttons {
+  padding-top: 20px;
+}
+.btn {
+  background-color: rgb(92, 92, 231);
+  color: white;
+  padding: 10px;
+  border: 1px solid rgb(30, 30, 158);
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: rgb(41, 41, 141);
+  cursor: pointer;
+}
+.buttons a {
+  text-decoration: none;
+}
+.rightSection img {
+  width: 80%;
+}
+#element {
+  color: rgb(171, 82, 255);
+}

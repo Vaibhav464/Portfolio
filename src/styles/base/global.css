@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(3, 33, 37);
+  color: white;
+}
+main hr {
+  border: 0;
+  background: rgb(151, 151, 240);
+  height: 1px;
+  margin: 40px 80px;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+figcaption {
+  color: rgb(175, 166, 166);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.purple {
+  color: rgb(187, 115, 255);
+}
+.aqua {
+  color: aqua;
+}
+.text-gray {
+  color: gray;
+}
+a {
+  position: relative;
+  text-decoration: none;
+}
+.line-effect::after {
+  content: "";
+  display: inline-block;
+  background: aqua;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  transition: all 0.5s;
+}
+
+.line-effect:hover::after {
+  width: 100%;
+}

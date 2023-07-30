@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaibhav - Portfolilo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <header>
@@ -18,10 +25,10 @@
         <div class="left">Vaibhav's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="/">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="mailto:vaibhav.ag464@gmail.com">Contact Me</a></li>
           </ul>
         </div>
@@ -31,26 +38,150 @@
       <section class="firstSection">
         <div class="leftSection">
           <div>Hi, I'm</div>
-          <div id = "name"><span class="purple">Vaibhav</span> Agrawal</div>
-          <div>and I'm familiar with </div>
+          <div id="name"><span class="purple">Vaibhav</span> Agrawal</div>
+          <div>and I'm familiar with</div>
           <span id="element"></span>
           <div class="buttons">
             <a href="/"><button class="btn">Resume</button></a>
-            <a href="https://github.com/Vaibhav464"><button class="btn">Github</button></a>
+            <a href="https://github.com/Vaibhav464" target="_blank"
+              ><button class="btn">Github</button></a
+            >
           </div>
         </div>
         <div class="rightSection">
-          <img src="img/bg.png" alt="" />
+          <img src="src/img/bg.png" alt="background image" />
         </div>
       </section>
-      <hr />
-      <section class="secondSection" id="services">
+      <hr id="about" />
+      <section class="secondSection sub-section">
+        <article class="about-me-container">
+          <h3 class="section-title purple">About Me</h3>
+          <div class="about-me-info">
+            <p class="about-me-txt">
+              My name is Vaibhav, and I am a front-end web developer. I really
+              enjoy being able to build things in the web, which is why I
+              decided to pursue a career in web development this year.
+            </p>
+            <p class="about-me-txt">
+              I started learning web development in January and have been
+              consistently learning since then. During my 7-month journey,
+              <span class="aqua"
+                >I've been able to learn technologies such as HTML, CSS,
+                JavaScript and some React</span
+              >
+              , and I've been able to
+              <a class="aqua line-effect" href="#projects">build projects</a>
+              using them.
+            </p>
+          </div>
+        </article>
+      </section>
+      <hr id="projects" />
+      <section class="thirdSection">
+        <h3 class="section-title purple">My Projects</h3>
+        <span class="text-gray">Featured Projects</span>
+        <div class="project-container">
+          <div class="app-img-container">
+            <figure class="img-wrapper">
+              <img
+                src="src/img/TextUtils.png"
+                alt="image of textUtils App"
+                class="app-img"
+              />
+              <figcaption>Fig.1 - Home Page of TextUtils App</figcaption>
+            </figure>
+          </div>
+          <aside class="app-info logo">
+            <article class="app-info-container">
+              <h3 class="section-title project-title aqua">TextUtils</h3>
+              <p class="project-desc">
+                TextUtils is a utility webapp which can be used to manipulate
+                your text in the way you want. You can also toggle between 3
+                dark mode.
+              </p>
+            </article>
+            <ul class="project-info-container">
+              <li class="project-info">
+                Technologies : HTML, CSS, JavaScript, React
+              </li>
+              <li class="project-info">
+                Deployed URL:
+                <a
+                  target="_blank"
+                  class="line-effect aqua"
+                  href="https://vaibhav464.github.io/TextUtils/"
+                  >link</a
+                >
+              </li>
+              <li class="project-info">
+                Github Source :
+                <a
+                  target="_blank"
+                  class="line-effect aqua"
+                  href="https://github.com/Vaibhav464/TextUtils"
+                  >link</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="project-container">
+          <div class="app-img-container">
+            <figure class="img-wrapper">
+              <img
+                src="src/img/newsapp.png"
+                alt="image of news App"
+                class="app-img"
+              />
+              <figcaption>Fig.2 - Home Page of NewsApp</figcaption>
+            </figure>
+          </div>
+          <aside class="app-info logo">
+            <article class="app-info-container">
+              <h3 class="section-title project-title aqua">NewsApp</h3>
+              <p class="project-desc">
+                NewsApp is an API based news webapp. It covers all the news
+                category around the world. It shows the latest news update
+                everytime.
+              </p>
+            </article>
+            <ul class="project-info-container">
+              <li class="project-info">
+                Technologies : HTML, CSS, JavaScript, React, NPM
+              </li>
+              <li class="project-info">
+                Deployed URL:
+                <a target="_blank" class="line-effect aqua" href="/">link</a>
+              </li>
+              <li class="project-info">
+                Github Source :
+                <a
+                  target="_blank"
+                  class="line-effect aqua"
+                  href="https://github.com/Vaibhav464/NewsApp"
+                  >link</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div>
+          <a
+            class="line-effect aqua"
+            href="https://github.com/Vaibhav464"
+            target="_blank"
+            >More projects <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </section>
+      <hr id="services" />
+      <section class="fourthSection">
         <span class="text-gray">What I have done so far</span>
-        <h1>Work Experience</h1>
+        <h1 class="section-title purple">Work Experience</h1>
         <div class="box">
           <div class="logo vertical">
-            <img src="img/bg.png" alt="" class="image-top" />
-            <div class="vertical-title">HTML Developer (2020-21)</div>
+            <img src="src/img/bg.png" alt="" class="image-top" />
+            <div class="vertical-title aqua">HTML Developer (2020-21)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem beatae consequatur ad molestiae illum officia id optio,
@@ -58,8 +189,8 @@
             </div>
           </div>
           <div class="logo vertical">
-            <img src="img/bg.png" alt="" class="image-top" />
-            <div class="vertical-title">HTML Developer (2021-22)</div>
+            <img src="src/img/bg.png" alt="" class="image-top" />
+            <div class="vertical-title aqua">HTML Developer (2021-22)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem beatae consequatur ad molestiae illum officia id optio,
@@ -67,8 +198,8 @@
             </div>
           </div>
           <div class="logo vertical">
-            <img src="img/bg.png" alt="" class="image-top" />
-            <div class="vertical-title">HTML Developer (2022-23)</div>
+            <img src="src/img/bg.png" alt="" class="image-top" />
+            <div class="vertical-title aqua">HTML Developer (2022-23)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem beatae consequatur ad molestiae illum officia id optio,
@@ -76,8 +207,8 @@
             </div>
           </div>
           <div class="logo vertical">
-            <img src="img/bg.png" alt="" class="image-top" />
-            <div class="vertical-title">HTML Developer (2023-Present)</div>
+            <img src="src/img/bg.png" alt="" class="image-top" />
+            <div class="vertical-title aqua">HTML Developer (2023-Present)</div>
             <div class="vertical-desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem beatae consequatur ad molestiae illum officia id optio,
@@ -97,7 +228,7 @@
           <ul>
             <li>
               <a href="https://github.com/Vaibhav464" target="_blank"
-                ><div><img src="img/github.png" alt="" /></div>
+                ><div><img src="src/img/github.png" alt="" /></div>
                 Github</a
               >
             </li>
@@ -107,7 +238,7 @@
           <ul>
             <li>
               <a href="https://twitter.com/_Vaibhav_464" target="_blank"
-                ><div><img src="img/twitter.png" alt="" /></div>
+                ><div><img src="src/img/twitter.png" alt="" /></div>
                 Twitter</a
               >
             </li>
@@ -116,8 +247,10 @@
         <div class="footer-fourth">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/vaibhav-agrawal-996bb0234/" target="_blank"
-                ><div><img src="img/linkedIn.png" alt="" /></div>
+              <a
+                href="https://www.linkedin.com/in/vaibhav-agrawal-996bb0234/"
+                target="_blank"
+                ><div><img src="src/img/linkedIn.png" alt="" /></div>
                 LinkedIn</a
               >
             </li>
@@ -129,10 +262,10 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["HTML", "CSS", "JavaScript", "React"],
+        strings: ["C++", "HTML", "CSS", "JavaScript", "React"],
         typeSpeed: 50,
       });
     </script>
-    <script defer src="App.js"></script>
+    <script defer src="src/App.js"></script>
   </body>
 </html>
