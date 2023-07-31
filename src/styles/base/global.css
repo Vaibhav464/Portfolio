@@ -52,3 +52,21 @@ a {
 .line-effect:hover::after {
   width: 100%;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgb(82, 75, 75);
+  color: white;
+  cursor: pointer;
+  padding: 5px 17px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
