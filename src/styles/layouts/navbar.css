@@ -3,7 +3,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 12vh;
+  width: 100%;
   background-color: rgb(27, 89, 100);
+}
+.left {
+  font-size: 1.4rem;
 }
 nav ul {
   display: flex;
@@ -18,5 +22,5 @@ nav ul li a:hover {
 }
 nav ul li {
   list-style: none;
-  margin: 0 25px;
+  margin: 0 1.5rem;
 }

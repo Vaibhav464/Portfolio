@@ -1,9 +1,8 @@
 @import url(/src/styles/base/global.css);
-@import url(/src/styles/base/queries.css);
 @import url(/src/styles/layouts/navbar.css);
 @import url(/src/styles/layouts/section-1.css);
 @import url(/src/styles/layouts/section-2.css);
 @import url(/src/styles/layouts/section-3.css);
 @import url(/src/styles/layouts/section-4.css);
 @import url(/src/styles/layouts/footer.css);
-@import url(/src/styles/utils/variable.css);
+@import url(/src/styles/base/queries.css);

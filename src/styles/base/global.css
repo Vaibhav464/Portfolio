@@ -37,6 +37,9 @@ a {
   position: relative;
   text-decoration: none;
 }
+.margin-above{
+  margin-top: 2rem;
+}
 .line-effect::after {
   content: "";
   display: inline-block;
@@ -48,7 +51,6 @@ a {
   height: 1px;
   transition: all 0.5s;
 }
-
 .line-effect:hover::after {
   width: 100%;
 }

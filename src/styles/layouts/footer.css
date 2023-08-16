@@ -3,15 +3,29 @@ footer {
 }
 .footer {
   display: flex;
-  padding: 25px 100px 0;
-  justify-content: space-evenly;
+  padding: 4rem 0 0;
+  justify-content: space-around;
+  height: 10vh;
 }
-.footer > div {
-  width: 180px;
+.footer-first{
+  float: left;
+  width: auto;
+  margin-left: 10rem;
+}
+.footer-second{
+  float:left;
+  width:100%;
+}
+.footer ul {
   display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footer ul li{
+  margin: 0 4.5rem;
 }
 .footer img {
-  width: 25px;
+  width: 1.9vw;
 }
 .footer a {
   display: flex;
@@ -21,11 +35,8 @@ footer {
 .footer a:hover {
   text-decoration: underline;
 }
-.footer ul {
-  list-style: none;
-}
-footer .text {
+.footer-third {
   color: grey;
   text-align: center;
-  padding: 10px 0;
+  padding: 1.5rem 0 1rem 0;
 }
