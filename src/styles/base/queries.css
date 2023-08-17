@@ -13,20 +13,20 @@
   }
   nav {
     flex-direction: column;
-    height: 10vh;
+    height: 12vh;
   }
   .firstSection {
     flex-direction: column-reverse;
   }
   .firstSection > div {
-    width: 50%;
+    width: 70%;
   }
   .rightSection img {
     width: 100%;
     margin-bottom: 3rem;
   }
   .buttons {
-    width: 40vw;
+    width: 50vw;
   }
   .secondSection {
     height: 25vh;
@@ -83,17 +83,29 @@
     height: 30vh;
   }
   .thirdSection {
-    height: 100vh;
+    height: 110vh;
   }
   .fourthSection {
     height: 110vh;
-}
+  }
+  .footer ul li {
+    margin: 0 1rem;
+  }
+  .footer-first {
+    margin-left: 2rem;
+  }
 }
 @media screen and (max-width: 400px) {
   html {
-    font-size: 60%;
+    font-size: 70%;
+  }
+  .secondSection {
+    height: 45vh;
   }
   .thirdSection {
-    height: 94vh;
+    height: 140vh;
+  }
+  .fourthSection {
+    height: 130vh;
   }
 }
